@@ -152,6 +152,23 @@ while ( true ) {
 
 <!-- /.references -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/stats/iter/mmeanabs2`][@stdlib/stats/iter/mmeanabs2]: create an iterator which iteratively computes a moving arithmetic mean of squared absolute values.
+-   [`@stdlib/stats/iter/msumabs`][@stdlib/stats/iter/msumabs]: create an iterator which iteratively computes a moving sum of absolute values.
+-   [`@stdlib/stats/iter/sumabs`][@stdlib/stats/iter/sumabs]: compute the sum of absolute values for all iterated values.
+-   [`@stdlib/stats/iter/sumabs2`][@stdlib/stats/iter/sumabs2]: compute the sum of squared absolute values for all iterated values.
+
+</section>
+
+<!-- /.related -->
+
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 
@@ -210,6 +227,18 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/stats-iter-msumabs2/main/LICENSE
 
 [mdn-iterator-protocol]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterator_protocol
+
+<!-- <related-links> -->
+
+[@stdlib/stats/iter/mmeanabs2]: https://github.com/stdlib-js/stats-iter-mmeanabs2
+
+[@stdlib/stats/iter/msumabs]: https://github.com/stdlib-js/stats-iter-msumabs
+
+[@stdlib/stats/iter/sumabs]: https://github.com/stdlib-js/stats-iter-sumabs
+
+[@stdlib/stats/iter/sumabs2]: https://github.com/stdlib-js/stats-iter-sumabs2
+
+<!-- </related-links> -->
 
 </section>
 
