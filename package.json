@@ -1,0 +1,44 @@
+{
+  "name": "@stdlib/stats-iter-msumabs2",
+  "version": "0.0.0",
+  "description": "Create an iterator which iteratively computes a moving sum of squared absolute values.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./index.mjs",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stats-iter-msumabs2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "statistics",
+    "stats",
+    "mathematics",
+    "math",
+    "sum",
+    "summation",
+    "total",
+    "moving sum",
+    "absolute",
+    "value",
+    "math.abs",
+    "magnitude",
+    "squared",
+    "sliding window",
+    "sliding",
+    "window",
+    "moving",
+    "iterator",
+    "iterable",
+    "iterate"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
