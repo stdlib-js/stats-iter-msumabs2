@@ -30,10 +30,14 @@ For a window of size `W`, the moving sum of squared absolute values is defined a
 
 <!-- <equation class="equation" label="eq:moving_sum_squared_absolute_values" align="center" raw="s = \sum_{i=0}^{W-1} x_i^2" alt="Equation for the moving sum of squared absolute values."> -->
 
-<div class="equation" align="center" data-raw-text="s = \sum_{i=0}^{W-1} x_i^2" data-equation="eq:moving_sum_squared_absolute_values">
+```math
+s = \sum_{i=0}^{W-1} x_i^2
+```
+
+<!-- <div class="equation" align="center" data-raw-text="s = \sum_{i=0}^{W-1} x_i^2" data-equation="eq:moving_sum_squared_absolute_values">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@601912bba7cacd1e1ffed3583e9b86e6383b4202/lib/node_modules/@stdlib/stats/iter/msumabs2/docs/img/equation_moving_sum_squared_absolute_values.svg" alt="Equation for the moving sum of squared absolute values.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -43,38 +47,30 @@ For a window of size `W`, the moving sum of squared absolute values is defined a
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-iter-msumabs2
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-itermsumabs2 = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-msumabs2@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var itermsumabs2 = require( 'path/to/vendor/umd/stats-iter-msumabs2/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-msumabs2@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.itermsumabs2;
-})();
-</script>
+var itermsumabs2 = require( '@stdlib/stats-iter-msumabs2' );
 ```
 
 #### itermsumabs2( iterator, W )
@@ -130,14 +126,9 @@ s = it.next().value; // [3.0, -7.0, -5.0]
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-msumabs2@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var runif = require( '@stdlib/random-iter-uniform' );
+var itermsumabs2 = require( '@stdlib/stats-iter-msumabs2' );
 
 // Create an iterator for generating uniformly distributed pseudorandom numbers:
 var rand = runif( -10.0, 10.0, {
@@ -159,11 +150,6 @@ while ( true ) {
         console.log( 'sumabs2: %d', v.value );
     }
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -248,7 +234,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -268,13 +254,13 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/iter/mmeanabs2]: https://github.com/stdlib-js/stats-iter-mmeanabs2/tree/umd
+[@stdlib/stats/iter/mmeanabs2]: https://github.com/stdlib-js/stats-iter-mmeanabs2
 
-[@stdlib/stats/iter/msumabs]: https://github.com/stdlib-js/stats-iter-msumabs/tree/umd
+[@stdlib/stats/iter/msumabs]: https://github.com/stdlib-js/stats-iter-msumabs
 
-[@stdlib/stats/iter/sumabs]: https://github.com/stdlib-js/stats-iter-sumabs/tree/umd
+[@stdlib/stats/iter/sumabs]: https://github.com/stdlib-js/stats-iter-sumabs
 
-[@stdlib/stats/iter/sumabs2]: https://github.com/stdlib-js/stats-iter-sumabs2/tree/umd
+[@stdlib/stats/iter/sumabs2]: https://github.com/stdlib-js/stats-iter-sumabs2
 
 <!-- </related-links> -->
 
