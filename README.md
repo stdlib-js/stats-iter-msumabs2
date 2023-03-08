@@ -30,10 +30,14 @@ For a window of size `W`, the moving sum of squared absolute values is defined a
 
 <!-- <equation class="equation" label="eq:moving_sum_squared_absolute_values" align="center" raw="s = \sum_{i=0}^{W-1} x_i^2" alt="Equation for the moving sum of squared absolute values."> -->
 
-<div class="equation" align="center" data-raw-text="s = \sum_{i=0}^{W-1} x_i^2" data-equation="eq:moving_sum_squared_absolute_values">
+```math
+s = \sum_{i=0}^{W-1} x_i^2
+```
+
+<!-- <div class="equation" align="center" data-raw-text="s = \sum_{i=0}^{W-1} x_i^2" data-equation="eq:moving_sum_squared_absolute_values">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@601912bba7cacd1e1ffed3583e9b86e6383b4202/lib/node_modules/@stdlib/stats/iter/msumabs2/docs/img/equation_moving_sum_squared_absolute_values.svg" alt="Equation for the moving sum of squared absolute values.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -43,14 +47,30 @@ For a window of size `W`, the moving sum of squared absolute values is defined a
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-iter-msumabs2
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import itermsumabs2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-msumabs2@deno/mod.js';
+var itermsumabs2 = require( '@stdlib/stats-iter-msumabs2' );
 ```
 
 #### itermsumabs2( iterator, W )
@@ -58,7 +78,7 @@ import itermsumabs2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-msuma
 Returns an [iterator][mdn-iterator-protocol] which iteratively computes a moving sum of squared absolute values. The `W` parameter defines the number of iterated values over which to compute the moving sum.
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@deno/mod.js';
+var array2iterator = require( '@stdlib/array-to-iterator' );
 
 var arr = array2iterator( [ 2.0, 1.0, 3.0, -7.0, -5.0 ] );
 var it = itermsumabs2( arr, 3 );
@@ -107,8 +127,8 @@ s = it.next().value; // [3.0, -7.0, -5.0]
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import runif from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@deno/mod.js';
-import itermsumabs2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-msumabs2@deno/mod.js';
+var runif = require( '@stdlib/random-iter-uniform' );
+var itermsumabs2 = require( '@stdlib/stats-iter-msumabs2' );
 
 // Create an iterator for generating uniformly distributed pseudorandom numbers:
 var rand = runif( -10.0, 10.0, {
@@ -170,7 +190,7 @@ while ( true ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -214,7 +234,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -234,13 +254,13 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/iter/mmeanabs2]: https://github.com/stdlib-js/stats-iter-mmeanabs2/tree/deno
+[@stdlib/stats/iter/mmeanabs2]: https://github.com/stdlib-js/stats-iter-mmeanabs2
 
-[@stdlib/stats/iter/msumabs]: https://github.com/stdlib-js/stats-iter-msumabs/tree/deno
+[@stdlib/stats/iter/msumabs]: https://github.com/stdlib-js/stats-iter-msumabs
 
-[@stdlib/stats/iter/sumabs]: https://github.com/stdlib-js/stats-iter-sumabs/tree/deno
+[@stdlib/stats/iter/sumabs]: https://github.com/stdlib-js/stats-iter-sumabs
 
-[@stdlib/stats/iter/sumabs2]: https://github.com/stdlib-js/stats-iter-sumabs2/tree/deno
+[@stdlib/stats/iter/sumabs2]: https://github.com/stdlib-js/stats-iter-sumabs2
 
 <!-- </related-links> -->
 
