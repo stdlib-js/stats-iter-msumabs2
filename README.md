@@ -65,7 +65,7 @@ s = \sum_{i=0}^{W-1} x_i^2
 ## Usage
 
 ```javascript
-import itermsumabs2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-msumabs2@esm/index.mjs';
+import itermsumabs2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-msumabs2@v0.2.0-esm/index.mjs';
 ```
 
 #### itermsumabs2( iterator, W )
@@ -128,7 +128,7 @@ s = it.next().value; // [3.0, -7.0, -5.0]
 <script type="module">
 
 import runif from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@esm/index.mjs';
-import itermsumabs2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-msumabs2@esm/index.mjs';
+import itermsumabs2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-msumabs2@v0.2.0-esm/index.mjs';
 
 // Create an iterator for generating uniformly distributed pseudorandom numbers:
 var rand = runif( -10.0, 10.0, {
